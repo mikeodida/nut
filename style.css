@@ -1,0 +1,123 @@
+html{
+  font-size: 16px;
+}
+
+body{
+
+  font-family: sans-serif;
+
+  line-height: 1.5;
+
+  padding: 0;
+
+  margin: 0;
+
+  background-color: #f4f4f4;
+
+}
+
+#container{
+  display: grid;
+  grid-template-rows: 75px auto 50px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "hd hd hd"
+                        "cnt cnt cnt"
+                        "ft ft ft";
+}
+
+#logo{
+  font-family: cursive;
+  margin-right: auto;
+}
+
+#logo-image{
+  padding-top: 10px;
+  display: inline;
+  width: 50px;
+}
+
+#logo > h1{
+  display: inline;
+  font-weight: normal;
+  font-size: 1.7em;
+}
+
+h1{
+  font-size: 1.2em;
+}
+
+header{
+
+  grid-area: hd;
+  background: rgb(116,60,37);
+  min-height: 1em;
+ color: white;
+  border-bottom: 3px solid #006838;
+}
+#menu{
+  display: flex;
+
+  flex-direction: row;
+
+  flex-wrap: nowrap;
+
+  align-items: center;
+
+  font-family: sans-serif;
+
+  font-weight: 500;
+
+  list-style: none;
+}
+
+#menu a{
+  display: block;
+
+  background: #6a4a24;
+  color: white;
+
+  border-radius: .5em;
+
+  padding: .5em 1em;
+
+  margin: .5em;
+
+  text-decoration: none;
+}
+
+#menu a:hover{
+  border-bottom: 3px solid black;
+  color: #d4854d;
+}
+
+main{
+  grid-area: cnt;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+main #showcase {
+  margin-top: 1px;
+  min-height: 200px;
+  background: url('macadamia.png') no-repeat center;
+  background-size: cover;
+}
+
+#boxes{
+  display: flex;
+  text-align: center;
+}
+
+.box > img{
+  padding-top: 20px;
+}
+
+footer{
+  grid-area:ft;
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+
+  background-color: #743c25;
+  text-align: center;
+}
